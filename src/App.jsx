@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Fragment, useEffect, useState } from 'react';
 import axios from "axios";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Home } from './components/Home.jsx';
+import Home from './components/Home.jsx';
 import { Login } from './components/Login.jsx';
 import { Register } from './components/Register.jsx';
 import { DashboardAdmin } from './components/DashboardAdmin.jsx';
