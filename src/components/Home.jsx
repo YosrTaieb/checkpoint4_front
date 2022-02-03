@@ -29,7 +29,6 @@ const Home = () => {
                 <Card.Text>{val.description}</Card.Text>
                 <Card.Text>{val.date}</Card.Text>
                 <Card.Text>{val.id_category}</Card.Text>
-                <Button variant="outline-secondary" size="sm">Update</Button>{' '}
                 <Button variant="outline-danger" size="sm">Delete</Button>{' '}
               </Card.Body>
             </Card>

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home.jsx';
 import { Login } from './components/Login.jsx';
 import { Register } from './components/Register.jsx';
+import Form from "./components/Form.jsx";
 import { DashboardAdmin } from './components/DashboardAdmin.jsx';
 import { AuthContext } from "./contexts/AuthContext.js";
 import { UserContext } from "./contexts/UserContext.js";
@@ -58,6 +59,7 @@ const App = () => {
                   <>
                     <Link to="/login" className="mx-3">Login</Link>
                     <Link to="/register" className="mx-3">Register</Link>
+                    <Link to="/contact" className="mx-3">Contact</Link>
                   </>
               }
             </nav>
@@ -65,8 +67,9 @@ const App = () => {
               <Route exact path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
-              <Route path="/admin" element={<ProtectedRoute/>}>
-                <Route path="/admin" element={<DashboardAdmin />} />
+              <Route path="/contact" element={<Form />} />
+              <Route path="/admin" element={<ProtectedRoute />} >
+              <Route path="/admin" element={<DashboardAdmin />} />
               </Route>
             </Routes>
           </BrowserRouter>

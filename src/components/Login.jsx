@@ -18,7 +18,7 @@ export const Login = () => {
                     else {
                         localStorage.setItem("token", data.token);
                         localStorage.setItem("user", JSON.stringify(data.user));
-                        window.location.href = "/";
+                        window.location.href = "/admin";
                     }
                 })
         } else {
